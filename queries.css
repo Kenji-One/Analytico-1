@@ -1,0 +1,139 @@
+@media (max-width: 1500px){
+    .main-section{
+        grid-template-columns: auto 1fr;
+    }
+
+    .analytics-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .analytics-cards{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+      }  
+
+      .debit-card-img{
+        width: 50%;
+      }
+      .card-transactions {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    }
+}
+
+
+@media (max-width:1800px){
+    .analytics-cards{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+      }  
+      
+.my-chart{
+   
+    width: 100% !important;
+  }
+
+
+
+
+
+
+}
+   
+@media (max-width: 1200px) {
+
+  .side-nav-bottom-menu {
+    display: none;
+  }
+
+  .pro-card {
+    display: none;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+    padding-left: 4rem;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns: auto ;
+}
+/* 
+.side-bar-container{
+   background-color: transparent;
+} */
+.side-bar-container {
+
+    padding: 0rem;
+}
+.side-bar-container .nav-link{
+    font-size: 4rem;
+}
+.nav-link svg{
+    width: 5rem;
+    height: 5rem;
+}
+  .side-nav-menu {
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    background-color: #fafbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .side-nav-menu {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+
+    transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
+    transition-delay: 100ms;
+
+       transform: translateX(-250px);
+ 
+
+  }
+
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block !important;
+    /* position: fixed; */
+    /* top: 0;
+    right: 0; */
+    /* padding: 2.1rem 3.8rem 0 0; */
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+    .main-section{
+      display: grid;
+      grid-template-columns: auto;
+  
+    }
+
+    .analityc-bottom {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+    }
+ 
+  
+  }
+  

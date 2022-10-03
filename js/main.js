@@ -97,3 +97,33 @@ const tooltipLine = {
     }
   },
 };
+
+function beforePrintHandler() {
+  for (let id in Chart.instances) {
+    Chart.instances[id].resize();
+  }
+}
+window.addEventListener("beforeprint", () => {
+  myChart.resize(1800, 1800);
+});
+window.addEventListener("afterprint", () => {
+  myChart.resize();
+});
+
+$(document).ready(function () {
+  $("#color_mode").on("change", function () {
+    colorModePreview(this);
+  });
+});
+
+const MobileNavBtnEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".side-bar");
+MobileNavBtnEl.addEventListener("click", () => {
+  headerEl.classList.toggle("nav-open");
+});
+
+// const MobileNavBtn = document.querySelector(".btn-mobile-nav");
+// const mainNav = document.querySelector(".side-bar");
+// MobileNavBtn.addEventListener("click", () => {
+//   mainNav.classList.toggle("nav-open");
+// });

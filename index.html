@@ -16,10 +16,43 @@
           ></a
         >
 
+    <link rel="stylesheet" href="./queries.css" />
+  </head>
+  <body>
+
+
+    <header class="header">
+      <div class="tablet-margin header-box">
+
+    <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav open" name="menu-outline"></ion-icon>
+          <ion-icon  class="icon-mobile-nav close" name="close-outline"></ion-icon>
+        </button>
+        
+        <a href="#" class="logo"
+          ><img class="logo-img" src="./images/Frame.svg" /><span
+            >Analityco.</span
+          ></a
+        >
+
         <nav class="main-nav">
           <div class="dashboard">
             <img src="./images/arrow-right.svg" /><span>Dashboard</span>
           </div>
+
+          <div class="nav-right">
+            <div class="search">
+              <label for="site-search"
+                ><button type="submit" class="btn search-btn">
+                  <img src="./images/search.svg" /></button
+              ></label>
+              <input
+                type="search"
+                id="site-search"
+                name="q"
+                placeholder="Search..."
+              />
+            </div>
 
           <div class="nav-right">
             <div class="search">
@@ -51,6 +84,28 @@
             </div>
           </div>
         </nav>
+        
+    
+
+      </div>
+    </header>
+
+            <div class="bell">
+              <img class="bell-img" src="./images/bell-icon.svg" />
+            </div>
+
+            <div class="profile">
+              <img src="./images/autumn phillips.png" />
+
+              <div class="profile-info">
+                <h3 class="profile-name">Autumn Philips</h3>
+                <a class="profile-btn" href="#">Spring Pro</a>
+              </div>
+
+              <img class="profile-arrow-down" src="./images/arrow down.svg" />
+            </div>
+          </div>
+        </nav>
 
         <!-- <button class="btn-mobile-nav"> 
   <img src="./images/Category.svg" class="icon-mobile-nav nav-menu-btn" name="menu-outline">
@@ -62,6 +117,9 @@
     </header>
 
     <main class="main-section">
+    <main class="main-section">
+
+
       <section class="side-bar">
         <div class="side-bar-container">
           <div class="side-nav-menu">
@@ -357,6 +415,27 @@
                   <input type="checkbox" />
                   <span class="slider round"></span>
                 </label>
+                <!-- <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+          </label> -->
+                <div class="btn-container">
+                  <label class="switch btn-color-mode-switch">
+                    <input
+                      type="checkbox"
+                      name="color_mode"
+                      id="color_mode"
+                      value="1"
+                    />
+                    <label
+                      for="color_mode"
+                      data-on="Monthly"
+                      data-off="Daily"
+                      class="btn-color-mode-switch-inner"
+                    ></label>
+                  </label>
+                </div>
+
                 <img src="./images/dots.svg" />
               </div>
             </div>
@@ -367,6 +446,11 @@
           </div>
 
           <div class="grid-item transaction-section item4">
+              <canvas id="my-chart" width="100%"></canvas>
+            </div>
+          </div>
+
+          <div class="grid-item transaction-section item4" style="overflow-x: auto">
             <div class="transaction-top">
               <h3>invoices</h3>
               <div class="invoice-btn">
@@ -376,6 +460,7 @@
             </div>
 
             <table>
+            <table style="overflow-x: auto">
               <thead>
                 <tr class="titles">
                   <th>number</th>
@@ -447,6 +532,33 @@
         </div>
       </section>
     </main>
+
+        
+        
+        </div>
+
+
+      </section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
