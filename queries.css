@@ -1,4 +1,17 @@
-@media (max-width: 1500px){
+@media (max-width:1800px){
+    .analytics-cards{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+      }  
+      
+#my-chart{
+   
+    width: 100% !important;
+  }
+
+
+}
+   @media (max-width: 1500px){
     .main-section{
         grid-template-columns: auto 1fr;
     }
@@ -14,34 +27,68 @@
 
       .debit-card-img{
         width: 50%;
+     top: 6rem;
       }
-      .card-transactions {
+   .add-card-btn{
+    margin-bottom: 5rem;
+    width: 90%;
+
+   }
+   .card-transactions {
+
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+      .card-transactions-container {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto ;
+    align-items: flex-end;
     }
 }
 
 
-@media (max-width:1800px){
-    .analytics-cards{
-        display: grid !important;
-        grid-template-columns: 1fr 1fr;
-      }  
-      
-.my-chart{
-   
-    width: 100% !important;
-  }
 
-
-
-
-
-
-}
-   
 @media (max-width: 1200px) {
+    .analytics-main {
+        padding: 2rem;
+    }
+.logo{
+    gap: 2rem;
+}
+/* .header{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+} */
+.header{ 
+    background-color: transparent;
+}
+.header-box {
+    /* grid-column: 1;
+    margin-top: 0; */
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+  gap: 3rem;
+}
 
+
+
+.mobile-top{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 2rem 5.2rem;
+}
   .side-nav-bottom-menu {
     display: none;
   }
@@ -53,7 +100,7 @@
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
-    padding-left: 4rem;
+    /* padding-left: 4rem; */
   }
   .main-section {
     display: grid;
@@ -122,7 +169,10 @@
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
-
+  
+  .dashboard{
+    display: none;
+  }
     .main-section{
       display: grid;
       grid-template-columns: auto;
@@ -134,6 +184,32 @@
       grid-template-columns: 1fr !important;
     }
  
+    #my-chart{
+        width: 100% !important;
+    }
   
   }
   
+
+  @media (max-width: 700px){
+    html {
+        font-size: 50%;
+    }
+    .card-transactions-container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: flex-end;
+    }
+
+    .analytics-cards {
+        grid-template-columns:1fr;
+    }
+
+    .card-transactions-container .top-side{
+        display: none;
+    }
+    table{
+        width: 100%;
+    }
+
+  }
